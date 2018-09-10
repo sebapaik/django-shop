@@ -1,9 +1,0 @@
-body {
-  padding-top: 78px;
-}
-
-@media (min-width: 992px) {
-  body {
-    padding-top: 80px;
-  }
-}
