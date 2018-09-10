@@ -1,0 +1,15 @@
+{% extends "shop/base.html" %}
+{% block content %}
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+          <img class="img-thumbnail" src="{{ object.imageurl }}" alt="">
+        </div>
+        <div class="col-lg-8">
+          <h2>{{ object.brand }} {{ object.pname }}</h2>
+          <p>${{ object.price }}</p>
+          <p>{{ object.description }}</p>
+          <button class="btn" style="background:#f0c14b; border-color:#a88734;" href="{% url 'cart:cart-add' product.id %}">Add to cart</button>
+    </div>
+  </div>
+{% endblock content %}
