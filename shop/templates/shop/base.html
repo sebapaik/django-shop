@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'shop/main.css' %}">
+
+    <title>Example</title>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="{% url 'shop-index' %}"><img src="https://lh3.googleusercontent.com/UP0-yjvMnWf0KIoA5N2oo4U07ZphBGEJ5XC-thUGybH5ZHFEgx0reMdRz8sK9lcJSwvac4fIE1uZIM1eYPVoqWKdqwqtSuCc66xUTmQ45BAndYby7JCb6xbS1lXpfkB0aDSlnQoxxj37juE3ZNJIbzoElPVoQvyvpgsAy8s2yvsud629lOUuESt7fzvTEU-oYnbrLhBKt7J-MzXThuNnxJwziq917IhNyei8709_U9oOGObBk2W1EWutkPNlFThFIS65h67n_CsoUZejeSJVtJ9_b4gpM3ith7VyAE0tHsKpgOxeH4BCX0h8FO1xhRWo1Egrj1OdrZzih6RR8akY4-sK8e1RRyz8oUJI_QRNyx5jJ3hK0sZr32MIFYb8ONnkjX6jqtsIKHyhYD_0IDie1j-ZeelQfvjaMCgOda9o1JOt0AcpQuzchbqwTFzpv1M1HR-t82qs2rq9Dimv_QKLJAdDfbCtGrD0XSYwgE7FfxiqKBiUY235SK30ThYDCdDYOPwIrLAKE2wY8crIHFhcpLTKwVjvscxZh5NR8pp-Jpu5nfEFIA-ndgZTkU27lZy1B30S2RdlsrtYUbcNeYeIo_kRadW_FtqXYPJak-nPTSI1MOP-3Gu_1_J8hG0i3Q=w100-h30-no"</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cart</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    {% block content %}{% endblock content %}
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
